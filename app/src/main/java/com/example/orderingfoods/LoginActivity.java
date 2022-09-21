@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        username = findViewById(R.id.username);
+        username = findViewById(R.id.register_Username);
         password = findViewById(R.id.password);
         button = findViewById(R.id.button_login);
         button.setOnClickListener(new View.OnClickListener() {
