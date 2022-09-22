@@ -32,4 +32,7 @@
     <string name="haveAccount">Already have an Account?</string>
     <string name="SignIn">Login</string>
     <string name="fullName">Fullname</string>
+    <string name="txtSetting">Account Settings</string>
+    <string name="txtLogout">Logout</string>
+    <string name="doing">TODO</string>
 </resources>
