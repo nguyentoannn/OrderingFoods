@@ -6,13 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="30dp"
-    android:paddingRight="30dp"
     tools:context=".UserInformationActivity">
 
     <LinearLayout
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingTop="10dp"
@@ -64,7 +62,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/layout_detail_i4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -88,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Caramen Invisible"
+            android:text="@string/caraman_invisible"
             android:textSize="24sp"
             android:textStyle="bold|italic" />
     </LinearLayout>
@@ -96,15 +94,262 @@
     <View
         android:id="@+id/view_plitInfor"
         android:layout_width="0dp"
-        android:layout_height="1dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:background="@color/colorAccent"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/layout_detail_i4"
+        app:layout_constraintVertical_bias="0.01999998" />
 
+    <LinearLayout
+        android:id="@+id/layout_name_i4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_plitInfor"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txt_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="@string/full_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/i4_name" />
+
+        <TextView
+            android:id="@+id/txt_content_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:hint="@string/hint_mickey"
+            android:textColorHint="#757575" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/space_name"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:background="@color/line"
+        app:layout_constraintEnd_toEndOf="@+id/layout_name_i4"
+        app:layout_constraintStart_toStartOf="@+id/layout_name_i4"
+        app:layout_constraintTop_toBottomOf="@+id/layout_name_i4" />
+
+    <LinearLayout
+        android:id="@+id/layout_address_i4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space_name"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txt_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="@string/address_i4"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/i4_address" />
+
+        <TextView
+            android:id="@+id/txt_content_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:hint="@string/hint_mickey"
+            android:textColorHint="#757575" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/space_address"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:background="@color/line"
+        app:layout_constraintEnd_toEndOf="@+id/layout_address_i4"
+        app:layout_constraintStart_toStartOf="@+id/layout_address_i4"
+        app:layout_constraintTop_toBottomOf="@+id/layout_address_i4" />
+
+    <LinearLayout
+        android:id="@+id/layout_email_i4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space_address"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txt_email_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="@string/email_i4"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/i4_email" />
+
+        <TextView
+            android:id="@+id/txt_content_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:hint="@string/hint_mickey"
+            android:textColorHint="#757575" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/space_email"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:background="@color/line"
+        app:layout_constraintEnd_toEndOf="@+id/layout_email_i4"
+        app:layout_constraintStart_toStartOf="@+id/layout_email_i4"
+        app:layout_constraintTop_toBottomOf="@+id/layout_email_i4" />
+
+    <LinearLayout
+        android:id="@+id/layout_phone_i4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space_email"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txt_phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="@string/phone_i4"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/i4_phone" />
+
+        <TextView
+            android:id="@+id/txt_content_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:hint="@string/hint_mickey"
+            android:textColorHint="#757575" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/space_phone"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:background="@color/line"
+        app:layout_constraintEnd_toEndOf="@+id/layout_phone_i4"
+        app:layout_constraintStart_toStartOf="@+id/layout_phone_i4"
+        app:layout_constraintTop_toBottomOf="@+id/layout_phone_i4" />
+
+    <View
+        android:id="@+id/space_layout"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_phone_i4" />
+
+    <LinearLayout
+        android:id="@+id/layout_btn_i4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/layout_phone_i4"
+        app:layout_constraintStart_toStartOf="@+id/layout_phone_i4"
+        app:layout_constraintTop_toBottomOf="@+id/space_phone"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/btn_edit_i4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/input_lg"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:text="@string/edit_profile_i4"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:drawableRightCompat="@drawable/edit" />
+
+        <TextView
+            android:id="@+id/btn_change_password_i4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_lg"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:text="@string/change_password_i4"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:drawableEndCompat="@drawable/change_password" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

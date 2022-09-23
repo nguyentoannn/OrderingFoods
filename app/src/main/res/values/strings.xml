@@ -35,4 +35,12 @@
     <string name="txtSetting">Account Settings</string>
     <string name="txtLogout">Logout</string>
     <string name="doing">TODO</string>
+    <string name="caraman_invisible">Caraman Invisible</string>
+    <string name="full_name">Name</string>
+    <string name="hint_mickey">Mickey</string>
+    <string name="address_i4">Address</string>
+    <string name="email_i4">Email</string>
+    <string name="phone_i4">Phone</string>
+    <string name="edit_profile_i4">Edit Profile</string>
+    <string name="change_password_i4">Change Password</string>
 </resources>
