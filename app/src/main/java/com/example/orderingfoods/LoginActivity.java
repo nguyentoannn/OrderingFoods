@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 //import android.widget.Button;
 //import android.widget.EditText;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
@@ -20,6 +21,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+            }
+        });
+
+        Button btn_Login = findViewById(R.id.button_login);
+        btn_Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, UserInformationActivity.class));
             }
         });
     }
