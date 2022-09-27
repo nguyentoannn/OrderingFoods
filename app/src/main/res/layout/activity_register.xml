@@ -195,55 +195,17 @@
         app:layout_constraintTop_toBottomOf="@+id/register_Email"
         android:autofillHints="" />
 
-    <LinearLayout
-        android:id="@+id/layout_RadioButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone">
-
-        <RadioButton
-            android:id="@+id/btnAdmin"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/adm"
-            android:textColor="@color/white"
-            tools:ignore="TextContrastCheck" />
-
-        <RadioButton
-            android:id="@+id/btnEmployee"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/employees"
-            android:textColor="@color/white" />
-
-        <RadioButton
-            android:id="@+id/btnCustomer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/cus"
-            android:textColor="@color/white" />
-    </LinearLayout>
-
     <Button
         android:id="@+id/button_Register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button_bg"
         android:text="@string/signUp"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/layout_RadioButton"
-        app:layout_constraintStart_toStartOf="@+id/layout_RadioButton"
-        app:layout_constraintTop_toBottomOf="@+id/layout_RadioButton"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <LinearLayout
