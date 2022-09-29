@@ -8,6 +8,7 @@ import android.view.View;
 //import android.widget.Button;
 //import android.widget.EditText;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
@@ -29,6 +30,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, UserInformationActivity.class));
+            }
+        });
+
+        ImageView backToHome = findViewById(R.id.btn_backHome);
+        backToHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
             }
         });
     }

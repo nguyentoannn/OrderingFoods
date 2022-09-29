@@ -43,4 +43,10 @@
     <string name="phone_i4">Phone</string>
     <string name="edit_profile_i4">Edit Profile</string>
     <string name="change_password_i4">Change Password</string>
+    <string name="backToHome">TODO</string>
+    <string name="home_doing">TODO</string>
+    <string name="favorite_doing">TODO</string>
+    <string name="setting_doing">TODO</string>
+    <string name="cart_doing">TODO</string>
+    <string name="user_doing">TODO</string>
 </resources>
