@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.224" />
 
     <EditText
-        android:id="@+id/register_Username"
+        android:id="@+id/login_Username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -43,14 +43,14 @@
         android:paddingRight="20dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/login_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_Title" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/login_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -67,10 +67,10 @@
         android:paddingRight="20dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/register_Username"
+        app:layout_constraintEnd_toEndOf="@+id/login_Username"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/register_Username"
-        app:layout_constraintTop_toBottomOf="@+id/register_Username" />
+        app:layout_constraintStart_toStartOf="@+id/login_Username"
+        app:layout_constraintTop_toBottomOf="@+id/login_Username" />
 
     <TextView
         android:id="@+id/forgot_password"
@@ -80,8 +80,8 @@
         android:text="@string/forgot_password"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintEnd_toEndOf="@+id/login_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
     <Button
         android:id="@+id/button_login"
@@ -90,8 +90,8 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/button_lg"
         android:text="@string/btn_Login"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/login_password"
+        app:layout_constraintStart_toStartOf="@+id/login_password"
         app:layout_constraintTop_toBottomOf="@+id/forgot_password"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -110,8 +110,9 @@
         app:layout_constraintVertical_bias="0.01999998">
 
         <TextView
-            android:id="@+id/dont_haveAccount"
+            android:id="@+id/not_haveAccount"
             android:layout_width="wrap_content"
+            android:textSize="16sp"
             android:layout_height="wrap_content"
             android:text="@string/don_t_have_an_account"
             android:textColor="@color/black" />
@@ -120,8 +121,11 @@
             android:id="@+id/ToRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:text="@string/ToRegister"
-            android:textColor="@color/black" />
+            android:textColor="@color/purple_700" />
     </LinearLayout>
 
     <ImageView
