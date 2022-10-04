@@ -60,12 +60,16 @@ public class RegisterActivity extends AppCompatActivity {
                             Toast.makeText(RegisterActivity.this, "User already existed", Toast.LENGTH_SHORT).show();
                         }else{
                             Boolean addUser = dataBase.insertUser(user, name, pwd, confirm, add, mail, numberPhone);
-                            if(addUser){
-                                Toast.makeText(RegisterActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                                startActivity(intent);
+                            if(pwd.length() >= 6 && pwd.length() <= 20) {
+                                if (addUser) {
+                                    Toast.makeText(RegisterActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                    startActivity(intent);
+                                } else {
+                                    Toast.makeText(RegisterActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                                }
                             }else{
-                                Toast.makeText(RegisterActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, "The password length must be from 6 to 20 characters", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }else{

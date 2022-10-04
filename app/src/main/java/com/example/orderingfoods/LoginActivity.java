@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         login = findViewById(R.id.button_login);
         btn_toRegister = findViewById(R.id.ToRegister);
         forgotPassword = findViewById(R.id.forgot_password);
-        btn_toHome = findViewById(R.id.btn_backHome);
+        btn_toHome = findViewById(R.id.close_login);
         dataBase = new DatabaseManagement(this);
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class));
             }
         });
     }

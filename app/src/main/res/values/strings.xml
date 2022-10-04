@@ -49,4 +49,18 @@
     <string name="setting_doing">TODO</string>
     <string name="cart_doing">TODO</string>
     <string name="user_doing">TODO</string>
+    <string name="back_home_page">backHomePage</string>
+    <string name="close_login">TODO</string>
+    <string name="close_login_page">TODO</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="close_forgot_password">TODO</string>
+    <string name="change_pwd_title">Change Password</string>
+    <string name="btn_change_password">Change Password</string>
+    <string name="return_my_profile">Return my profile</string>
+    <string name="old_password">Enter old password</string>
+    <string name="new_password">Enter new password</string>
+    <string name="re_new_password">Enter confirm password</string>
 </resources>

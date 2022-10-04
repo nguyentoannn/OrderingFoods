@@ -5,10 +5,14 @@
       <map>
         <entry key="..\:/Android/OrderingFoods/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18" />
         <entry key="..\:/Android/OrderingFoods/app/src/main/res/drawable/address.xml" value="0.1945" />
+        <entry key="..\:/Android/OrderingFoods/app/src/main/res/drawable/back_home.xml" value="0.176" />
+        <entry key="..\:/Android/OrderingFoods/app/src/main/res/drawable/back_to_home.xml" value="0.176" />
         <entry key="..\:/Android/OrderingFoods/app/src/main/res/drawable/button_bg.xml" value="0.18" />
         <entry key="..\:/Android/OrderingFoods/app/src/main/res/drawable/button_lg.xml" value="0.18" />
         <entry key="..\:/Android/OrderingFoods/app/src/main/res/drawable/input_bg.xml" value="0.1945" />
         <entry key="..\:/Android/OrderingFoods/app/src/main/res/drawable/input_lg.xml" value="0.18" />
+        <entry key="..\:/Android/OrderingFoods/app/src/main/res/layout/activity_change_password.xml" value="0.2" />
+        <entry key="..\:/Android/OrderingFoods/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
         <entry key="..\:/Android/OrderingFoods/app/src/main/res/layout/activity_life_cycle.xml" value="0.25" />
         <entry key="..\:/Android/OrderingFoods/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Android/OrderingFoods/app/src/main/res/layout/activity_main.xml" value="0.2" />
